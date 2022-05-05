@@ -1,56 +1,214 @@
 body {
-    font-size: 16px;
-    background-color: #f4f4f4;
-    font-family: sans-serif;
-}
-
-h1 {
-    font-size: 2em;
-    /* shorthand for TOP RIGHT BOTTOM LEFT */
-    /* margin: 1em 0 1.5em 0; */
-}
-
-h2 {
-    font-size: 1.6em;
-}
-
-h3 {
-    font-size: 1.4em;
-}
-
-p {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-.inner-wrapper {
-    width: 90%;
-    margin: 0 auto;
-}
-
-header,
-footer {
-    background-color: #777999;
-    padding: 2em 0;
-}
-
-.hero {
-    text-align: center;
-    background: #a5a5a5;
-    min-height: 5em;
-    padding: 2em;
-    margin: 1em 0;
-    /* vertically align */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    background-color: #FF7C60;
+    font-family: 'Ms Madi', cursive;
+    color: #C34A36;
+    font-size: 20px;
 
 }
 
 
 
 main {
-    margin-bottom: 2em;
+    margin: 0 auto;
+    width: 1320px;
+    margin-bottom: 20em;
+    /*    background-image: url(utjohn.JPG);*/
+
+}
+
+
+
+
+a {
+    color: #3A001E;
+}
+
+
+h1 {
+    color: #3A001E;
+    font-size: 5em;
+    letter-spacing: .2em;
+    text-decoration: underline;
+    text-decoration-thickness: 0.03em;
+}
+
+
+h1 a:hover {
+    color: #EDE9D0;
+}
+
+
+header {
+    /*    border: 3px solid white;*/
+    text-align: center;
+    background-color: #C34A36;
+    width: 100%;
+    /*    padding: 0;*/
+
+}
+
+.main-content img:first-of-type {
+    /*    width: 96%;*/
+    width: 1330px;
+    height: 700px;
+    object-fit: cover;
+    /*    border: 3px solid white;*/
+
+}
+
+.hometext {
+    /*    border: 3px solid white;*/
+    width: 300px;
+    height: 400px;
+    position: relative;
+    left: 60rem;
+    top: 20rem;
+    font-size: 3em;
+    color: #C34A36;
+    text-align: right;
+}
+
+
+.boxcontainer {
+    position: relative;
+    text-align: center;
+    color: #EDE9D0;
+    /*    margin: 1px;*/
+}
+
+.box img {
+    width: 325px;
+    height: 200px;
+    background-size: auto;
+    object-fit: cover;
+
+}
+
+.box {
+    width: 325px;
+    height: 200px;
+
+    border: 2.5px solid #3A001E;
+    float: left;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    /*    padding: .5em;*/
+    grid-column-gap: 5rem;
+    /*    box-shadow: 0;*/
+
+    position: relative;
+
+}
+
+
+.name {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.3em;
+    transform: translate(-50%, -50%);
+    background-color: #3A001E;
+    opacity: .6;
+    border-radius: 20%;
+    letter-spacing: .05em;
+
+}
+
+.name a {
+    color: #EDE9D0;
+    text-decoration: none;
+}
+
+.name:hover {
+    color: #C34A36;
+    font-size: 1.5em;
+
+
+}
+
+.recipebox {
+    margin: 1em;
+    border: 2px solid #3A001E;
+    max-width: 1330px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "pic pic pic"
+        "info info info"
+        "ingredients method method"
+        "nutrition nutrition nutrition";
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: 400px, 80px, 400px 80px;
+    gap: 5px;
+    background-color: #C34A36;
+}
+
+.picture {
+    grid-area: pic;
+
+}
+
+.recipeinfo {
+    grid-area: info;
+}
+
+.ingredients {
+    grid-area: ingredients;
+}
+
+.method {
+    grid-area: method;
+}
+
+.nutritioninfo {
+    grid-area: nutrition;
+}
+
+.picture,
+.recipeinfo,
+.ingredients,
+.method,
+.nutritioninfo {
+    background-color: #EDE9D0;
+    border: 1px solid #3A001E;
+    padding: 0px;
+    font-size: 1.5em;
+
+}
+
+footer {
+    clear: both;
+    list-style: none;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    grid-area: f;
+}
+
+footer .socials {
+    text-align: center;
+    flex: 0 48%;
+    font-size: 2em;
+    padding: 2em;
+}
+
+footer li {
+    display: inline-block;
+    /*    text-decoration: none;*/
+
+}
+
+footer li a {
+    /*    text-decoration: none;*/
+    color: #3A001E;
+    padding: 2px 20px;
+    font-size: 1.5em;
+
+
+}
+
+footer li a:hover {
+    color: #EDE9D0;
+    text-decoration-line: underline;
 }

@@ -2,18 +2,32 @@
 # set the layout to use, in this case, the homepage one
 layout: layouts/homepage
 
+
 # set the page title
-title: 11056 Project 2 Starter
+title: My Recipes
+
 
 # We can set extra info here to use in our templates
 
 hero:
-    title: "I am the hero title!"
+    title: "I am the herrrro title!"
+   
+    
+fancy:
+    text: "test"
 ---
 
 
-# Hello!
+<!--# Hello Ut-->
 
+![alt text](assets/images/utjohn.jpg)
+
+
+<!--
 ## I am your index.md file
 
 Any content you add to this markdown file will be displayed on the homepage 
+
+
+This is where ben typed something like slkjdnskijdlkjfldkj
+-->

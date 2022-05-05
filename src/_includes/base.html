@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="inner-wrapper">
-            <h1>{{ title }}</h1>
+            <h1><a href="http://localhost:8080/index.html">My recipe's</a></h1>
         </div>
     </header>
     <main>
@@ -21,8 +21,9 @@
             <!-- STOP! Don't add anything more to the base template -->
             <!-- the content here is loaded through the homepage template -->
             {% block content %}
-            {{ content }}
+            {{ content}}
             {% endblock %}
+
         </div>
     </main>
 
