@@ -1,0 +1,223 @@
+body {
+    background-color: #FF7C60;
+    font-family: 'Ms Madi', cursive;
+    color: #C34A36;
+    font-size: 20px;
+
+}
+
+a {
+    color: #EDE9D0;
+    text-decoration: none;
+
+}
+
+
+h1 {
+    color: #3A001E;
+    font-size: 5em;
+    letter-spacing: .2em;
+    text-decoration: underline;
+    text-decoration-thickness: 0.03em;
+}
+
+
+
+h1 a:hover {
+    color: #EDE9D0;
+}
+
+h2 {
+    text-align: center;
+}
+
+p,
+ul {
+    margin: 1em;
+    letter-spacing: 1px;
+}
+
+
+
+.container {
+    margin: 1em;
+    border: 2px solid #3A001E;
+    height: auto;
+}
+
+.recipebox {
+    margin: 1em;
+    border: 2px solid #3A001E;
+    max-width: 1330px;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "pic pic pic"
+        "info info info"
+        "ingredients method method"
+        "nutrition nutrition nutrition";
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: 400px, 80px, 400px 80px;
+    gap: 5px;
+    background-color: #C34A36;
+}
+
+.picture {
+    grid-area: pic;
+
+}
+
+.recipeinfo {
+    grid-area: info;
+}
+
+.ingredients {
+    grid-area: ingredients;
+}
+
+.method {
+    grid-area: method;
+}
+
+.nutritioninfo {
+    grid-area: nutrition;
+}
+
+.picture,
+.recipeinfo,
+.ingredients,
+.method,
+.nutritioninfo {
+    background-color: #EDE9D0;
+    border: 1px solid #3A001E;
+    padding: 0px;
+    font-size: 1.5em;
+
+}
+
+.header {
+    /*    border: 3px solid white;*/
+    text-align: center;
+    background-color: #C34A36;
+    /*    padding: 0;*/
+
+}
+
+.homeimage {
+    width: 1330px;
+    height: 700px;
+    /*    border: 3px solid white;*/
+    background-image: url(utjohn.jpg);
+    background-size: cover;
+
+}
+
+.hometext {
+    /*    border: 3px solid white;*/
+    width: 300px;
+    height: 400px;
+    position: relative;
+    left: 60rem;
+    top: 20rem;
+    font-size: 3em;
+    color: #C34A36;
+    text-align: right;
+}
+
+
+.boxcontainer {
+    position: relative;
+    text-align: center;
+    color: #EDE9D0;
+
+}
+
+.box img {
+    width: 330px;
+    height: 200px;
+    background-size: auto;
+    object-fit: cover;
+}
+
+.box {
+    width: 330px;
+    height: 200px;
+
+    border: 1px solid #3A001E;
+    float: left;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    /*    padding: .5em;*/
+    grid-column-gap: 5rem;
+    /*    box-shadow: 0;*/
+
+    position: relative;
+
+}
+
+
+.name {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.3em;
+    transform: translate(-50%, -50%);
+    background-color: #3A001E;
+    opacity: .6;
+    border-radius: 20%;
+    letter-spacing: .05em;
+
+}
+
+.name :hover {
+    color: #C34A36;
+    font-size: 1.5em;
+
+
+}
+
+.footer {
+    clear: both;
+    bottom: 0%;
+    list-style: none;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    grid-area: f;
+
+}
+
+}
+
+.footer .socials {
+    text-align: center;
+    flex: 0 48%;
+    font-size: 2em;
+    padding: 2em;
+}
+
+.footer li {
+    display: inline-block;
+    text-align: center;
+    flex: 0 48%;
+    font-size: 2em;
+    padding: 1em;
+
+
+}
+
+.footer li a {
+    /*    text-decoration: none;*/
+    color: #3A001E;
+    padding: 2px 20px;
+    font-size: 1.5em;
+
+
+}
+
+.footer li a:hover {
+    color: #EDE9D0;
+    text-decoration-line: underline;
+}
