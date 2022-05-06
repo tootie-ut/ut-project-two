@@ -1,29 +1,10 @@
-# 11056-project2 REcipe guide
-# Recipe guide
+# Reflection on *out-side the grid*
 
-## 11056 Project 2 Starter
+This project was much more difficult for me. Whilst I understand the concept behind site generators. I struggled to navigate my way around inserting my content though the system. 
+I do understand the logic behind site generators, keeping the head, footer and template of the website in separate folders. Does make sense. This allows the user not to have to go through multiple means of html pages.
 
-This is repo containing everything you need to start Project 2. All you need to do is clone this repository to your computer and start editing...
+I decided to create 2 html files with a css style sheet. From the project one, I became familiar with html and css. 
 
-Make sure you refer to Canvas for more info.
+During our last session, with of course your(Ben) guidance, I was able to make my home page look the same as my html file. **however,** afterwards I mucked it all up and somehow disconnected the css link to the eleventy code. I was truly dishearten.
 
-## Install Elventy
-From Terminal, navigate to the folder you saved the repository in:
-
-Type `npm create`
-
-or, if that doesn't work: `npm install --save-dev @11ty/eleventy`
-
-## Test your site
-
-Open Terminal and type: `npm start`
-
-This will create a local server to test the website.
-
-Go to: http://localhost:8080 to view your site
-
-## Build the site
-
-Run `npm build`
-
-Open up your site folder and you'll discover a folder within it called `final-website` this is where your actual site files are located. 
+So, I hope you can accept my two html files with the css as my submission. The eleventy is still the file for you to peruse.

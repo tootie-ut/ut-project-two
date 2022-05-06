@@ -31,6 +31,8 @@ h2 {
     text-align: center;
 }
 
+
+
 p,
 ul {
     margin: 1em;
@@ -41,6 +43,7 @@ ul {
 
 .container {
     margin: 1em;
+    width: 1396px;
     border: 2px solid #3A001E;
     height: auto;
 }
@@ -104,7 +107,7 @@ ul {
 }
 
 .homeimage {
-    width: 1330px;
+    width: 1396px;
     height: 700px;
     /*    border: 3px solid white;*/
     background-image: url(utjohn.jpg);
@@ -112,8 +115,16 @@ ul {
 
 }
 
+.picture img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+}
+
 .hometext {
-    /*    border: 3px solid white;*/
+/*    border: 3px solid white;*/
     width: 300px;
     height: 400px;
     position: relative;
@@ -133,7 +144,7 @@ ul {
 }
 
 .box img {
-    width: 330px;
+    width: 400px;
     height: 200px;
     background-size: auto;
     object-fit: cover;
@@ -204,8 +215,13 @@ ul {
     flex: 0 48%;
     font-size: 2em;
     padding: 1em;
+    margin: 0 auto;
 
 
+}
+
+.footer ul {
+    margin: 0 auto;
 }
 
 .footer li a {
